@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource C3}">
+    
+    <VerticalStackLayout>
+        <VerticalStackLayout Spacing="20" Padding="20" BackgroundColor="{StaticResource C3}">
+            <Label Text="Sobre o Aplicativo"
+                FontFamily="CharmBold"
+                FontSize="36"
+                TextColor="{StaticResource C1}" 
+                VerticalOptions="Center" 
+                HorizontalOptions="Center" />
+        </VerticalStackLayout>
+
+        
+        <Frame Padding="10" Margin="10" BackgroundColor="{StaticResource C2}">
+            <VerticalStackLayout Spacing="10">
+                <Label Text="Aplicação para gerenciamento de hospedagem em hotéis."
+                    FontFamily="Charm"
+                    FontSize="20"
+                    TextColor="{StaticResource Black}" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"/>
+                <Label Text="Desenvolvedor: Gabriel Margini"
+                    FontFamily="Charm"
+                    FontSize="20"
+                    TextColor="{StaticResource Black}" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"/>
+                <Label Text="04.11.2024 v0.1"
+                    FontFamily="Charm"
+                    FontSize="14"
+                    TextColor="{StaticResource Black}" 
+                    VerticalOptions="Center" 
+                    HorizontalOptions="Center"/>
+            </VerticalStackLayout>
+        </Frame>
+
+
+    </VerticalStackLayout>
+</ContentPage>

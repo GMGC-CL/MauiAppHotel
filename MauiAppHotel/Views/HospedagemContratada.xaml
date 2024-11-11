@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.HospedagemContratada"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource C3}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand">
+
+        <Label Text="{Binding QuartoSelecionado.Descricao}"
+               FontFamily="CharmBold"
+               FontSize="50"
+               TextColor="{StaticResource C1}"
+               HorizontalTextAlignment="Center"/>
+
+        <Frame Margin="10" BackgroundColor="{StaticResource C2}">
+            <StackLayout  Orientation="Horizontal" >
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Adultos: " 
+                           FontSize="20"
+                           FontFamily="CharmBold"/>
+                    <Label Text="{Binding QntAdultos}"
+                           Padding="3"
+                           TextColor="{StaticResource C3}"
+                           FontSize="20"
+                           FontFamily="CharmBold"/>
+                </HorizontalStackLayout>
+
+                <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                    <Label Text="Crianças: " 
+                           FontSize="20"
+                           FontFamily="CharmBold"/>
+                    <Label Text="{Binding QntCriancas}" 
+                           Padding="3"
+                           TextColor="{StaticResource C3}"
+                           FontSize="20"
+                           FontFamily="CharmBold"/>
+                </HorizontalStackLayout>
+            </StackLayout>
+        </Frame>
+
+        <Frame Margin="10" BackgroundColor="{StaticResource C2}">
+            <Grid ColumnDefinitions="*, *, *"
+                  RowDefinitions="Auto, Auto">
+                <Label Grid.Row="0" Grid.Column="0" Text="Check-in:" FontSize="20" FontFamily="CharmBold"/>
+                <Label Grid.Row="0" Grid.Column="1" Text="Check-out:" FontSize="20" FontFamily="CharmBold"/>
+                <Label Grid.Row="0" Grid.Column="2" Text="Estadia:" FontSize="20" FontFamily="CharmBold"/>
+
+                <Label Grid.Row="1" Grid.Column="0" Text="{Binding DataCheckIn, StringFormat='{}{0:dd/MM/yyyy}'}" FontSize="15" FontFamily="CharmBold"/>
+                <Label Grid.Row="1" Grid.Column="1" Text="{Binding DataCheckOut, StringFormat='{}{0:dd/MM/yyyy}'}" FontSize="15" FontFamily="CharmBold"/>
+                <Label Grid.Row="1" Grid.Column="2" Text="{Binding Estadia}" FontSize="15" FontFamily="CharmBold"/>
+            </Grid>
+        </Frame>
+
+        <Frame Margin="10" BackgroundColor="{StaticResource C2}">
+            <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                <Label Text="Valor Total: " FontSize="20" FontFamily="CharmBold"/>
+                <Label Text="{Binding ValorTotal, StringFormat='{}{0:c}'}" Padding="3" FontSize="20" FontFamily="CharmBold"/>
+            </HorizontalStackLayout>
+        </Frame>
+
+        <Button Text="Voltar"
+                HorizontalOptions="Center"
+                Clicked="Button_Clicked"
+                BackgroundColor="{StaticResource C1}"
+                TextColor="{StaticResource C3}"
+                FontSize="16" 
+                FontFamily="CharmBold"/>
+
+    </VerticalStackLayout>
+</ContentPage>

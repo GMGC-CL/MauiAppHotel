@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiAppHotel.Views.ContratacaoHospedagem"
+             Title="ContratacaoHospedagem"
+             NavigationPage.HasNavigationBar="False"
+             BackgroundColor="{StaticResource C3}">
+
+    <VerticalStackLayout VerticalOptions="CenterAndExpand"
+                         Padding="10"
+                         Spacing="10">
+
+        <Label Text="Cálculo da Diária"
+               FontFamily="CharmBold"
+               FontSize="50"
+               TextColor="{StaticResource C1}"/>
+
+        <Frame Padding="10" BackgroundColor="{StaticResource C2}">
+            <VerticalStackLayout>
+                <Frame Padding="10" Margin="10">
+                    <Grid RowDefinitions="Auto, Auto"
+                          ColumnDefinitions="*, *, 2*">
+
+                        <Label Grid.Row="0" Grid.Column="0"
+                               Text="Adultos:" 
+                               FontFamily="CharmBold"/>
+
+                        <Label Grid.Row="0" Grid.Column="1"
+                               TextColor="{StaticResource C1}"
+                               Text="{Binding Value}"
+                               FontFamily="Charm"
+                               BindingContext="{x:Reference stp_adultos}"/>
+
+                        <Stepper Grid.Row="0" Grid.Column="2"
+                                 x:Name="stp_adultos"
+                                 Minimum="0"
+                                 Maximum="10"
+                                 Increment="1" />
+
+                        <Label Grid.Row="1" Grid.Column="0"
+                               Text="Crianças:"
+                               FontFamily="CharmBold"/>
+
+                        <Label Grid.Row="1" Grid.Column="1"
+                               TextColor="{StaticResource C1}"
+                               Text="{Binding Value}"
+                               FontFamily="Charm"
+                               BindingContext="{x:Reference stp_criancas}"/>
+
+                        <Stepper Grid.Row="1" Grid.Column="2"
+                                 x:Name="stp_criancas"
+                                 Minimum="0"
+                                 Maximum="10"
+                                 Increment="1" />
+                    </Grid>
+                </Frame>
+                
+                <Frame Padding="10" Margin="10">
+                    <VerticalStackLayout>
+
+                        <Label Text="Escolha sua Suíte"
+                               FontFamily="CharmBold"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource C1}"/>
+
+                        <Picker x:Name="pck_quarto"
+                                FontFamily="CharmBold"
+                                Title="Selecione sua Acomodação" 
+                                ItemDisplayBinding="{Binding Descricao}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10"
+                       Margin="10">
+                    <VerticalStackLayout Spacing="10">
+
+                        <Label Text="Período da Estadia"
+                               FontFamily="CharmBold"
+                               TextTransform="Uppercase"
+                               FontSize="Subtitle"
+                               TextColor="{StaticResource C1}"/>
+
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="Check-in:" FontFamily="CharmBold"/>
+                            <DatePicker x:Name="dtpck_checkin"
+                                        FontFamily="Charm"
+                                        Format="dd/MM/yyyy"
+                                        DateSelected="dtpck_checkin_DateSelected"/>
+                        </HorizontalStackLayout>
+
+                        <HorizontalStackLayout HorizontalOptions="CenterAndExpand">
+                            <Label Text="Check-out:" FontFamily="CharmBold"/>
+                            <DatePicker x:Name="dtpck_checkout"
+                                        FontFamily="Charm"
+                                        Format="dd/MM/yyyy" />
+                        </HorizontalStackLayout>
+                    </VerticalStackLayout>
+                </Frame>
+
+                <Frame Padding="10" Margin="10">
+                    <VerticalStackLayout Spacing="10">
+                        <Button Text="Avançar" 
+                                Clicked="Button_Clicked" 
+                                FontFamily="CharmBold" 
+                                TextColor="{StaticResource C1}"
+                                BackgroundColor="{StaticResource C3}"/>
+                        
+                        <Button Text="Sobre" 
+                                Clicked="Button_Clicked_1" 
+                                FontFamily="CharmBold" 
+                                TextColor="{StaticResource C1}"
+                                BackgroundColor="{StaticResource C3}"/>
+                    </VerticalStackLayout>
+                </Frame>
+
+            </VerticalStackLayout>
+        </Frame>
+
+    </VerticalStackLayout>
+
+</ContentPage>

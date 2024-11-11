@@ -1,0 +1,54 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "G:\\10 - Workspace\\dotNet Maui\\MauiAppHotel\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{3C1B6C94-EB83-46AE-9807-3F17DC555C11}|MauiAppHotel\\MauiAppHotel.csproj|g:\\10 - workspace\\dotnet maui\\mauiapphotel\\mauiapphotel\\views\\contratacaohospedagem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3C1B6C94-EB83-46AE-9807-3F17DC555C11}|MauiAppHotel\\MauiAppHotel.csproj|solutionrelative:mauiapphotel\\views\\contratacaohospedagem.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3C1B6C94-EB83-46AE-9807-3F17DC555C11}|MauiAppHotel\\MauiAppHotel.csproj|g:\\10 - workspace\\dotnet maui\\mauiapphotel\\mauiapphotel\\views\\hospedagemcontratada.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{3C1B6C94-EB83-46AE-9807-3F17DC555C11}|MauiAppHotel\\MauiAppHotel.csproj|solutionrelative:mauiapphotel\\views\\hospedagemcontratada.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "HospedagemContratada.xaml",
+              "DocumentMoniker": "G:\\10 - Workspace\\dotNet Maui\\MauiAppHotel\\MauiAppHotel\\Views\\HospedagemContratada.xaml",
+              "RelativeDocumentMoniker": "MauiAppHotel\\Views\\HospedagemContratada.xaml",
+              "ToolTip": "G:\\10 - Workspace\\dotNet Maui\\MauiAppHotel\\MauiAppHotel\\Views\\HospedagemContratada.xaml",
+              "RelativeToolTip": "MauiAppHotel\\Views\\HospedagemContratada.xaml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAEMAAAAoAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-11T02:15:02.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "ContratacaoHospedagem.xaml",
+              "DocumentMoniker": "G:\\10 - Workspace\\dotNet Maui\\MauiAppHotel\\MauiAppHotel\\Views\\ContratacaoHospedagem.xaml",
+              "RelativeDocumentMoniker": "MauiAppHotel\\Views\\ContratacaoHospedagem.xaml",
+              "ToolTip": "G:\\10 - Workspace\\dotNet Maui\\MauiAppHotel\\MauiAppHotel\\Views\\ContratacaoHospedagem.xaml",
+              "RelativeToolTip": "MauiAppHotel\\Views\\ContratacaoHospedagem.xaml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAABEAAAAcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2024-11-11T02:27:09.164Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
